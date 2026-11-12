@@ -2,7 +2,7 @@
 
 Student-facing quantum machine learning exercises, maintained by The Quantum Turtle.
 
-**Lab 2 release checklist:** The course environment and student notebook syntax have passed GitHub Actions. Students need **read access to this repository** (or a copy supplied in Canvas). The repository may still be private until the instructor grants access or makes it public. The published GHCR image has **not yet been verified**, so use the build-from-source instructions below.
+**Lab 2 release checklist:** The course environment and student notebook syntax have passed GitHub Actions. Students need **read access to this repository** (or a copy supplied in Canvas). The student repository is public. The published GHCR image has **not yet been verified**, so use the build-from-source instructions below.
 
 ## Lab 2 — Encoding Classical Data and Quantum Similarity
 
@@ -42,7 +42,7 @@ Open **the tokenized URL printed by your own terminal**, not the example URL abo
 
 `labs/lab-02-quantum-encoding/lab.ipynb`
 
-Run the imports cell, then work through Lab 2 **in notebook order**. The repository is mounted into the container, so notebook edits are saved to your local course directory. Submit the finished notebook according to the course LMS instructions.
+Run the imports cell, then work through Lab 2 **in notebook order**. The repository is mounted into the container, so notebook edits are saved to your local course directory. **Lab 2 is ungraded practice. You do not need to submit this notebook or upload anything to Canvas.** Save your progress if you wish; quizzes and homework have separate graded submissions.
 
 To stop JupyterLab, press **Ctrl+C** in the terminal. You can start it again with `docker compose up` (or `docker compose up --build` after changing dependencies).
 
