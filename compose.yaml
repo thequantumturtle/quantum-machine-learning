@@ -1,0 +1,12 @@
+services:
+  jupyter:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    image: ghcr.io/thequantumturtle/qml-core:fall-2026-v1
+    ports:
+      - "127.0.0.1:8888:8888"
+    volumes:
+      - ./:/workspace
+    working_dir: /workspace
+    init: true
