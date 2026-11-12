@@ -23,8 +23,6 @@ For troubleshooting and updating your checkout, see the [course README](../../RE
 
 **Assessment note:** Lab 2 has no Canvas submission. Quizzes and Homework 1 are separate graded activities with their own instructions and deadlines.
 
-## Completed example (available after class)
+## After-class review
 
-Students may review [the finished Lab 2 notebook](completed-example.ipynb), which contains completed implementations of the same exercises and runs in the course Docker environment. Use it to compare approaches or revisit a concept at your own pace. The original [practice notebook](lab.ipynb) remains unchanged and is useful for trying the exercises independently.
-
-**Neither notebook is graded or submitted.** Homework 1 is a separate assessment with its own starter and deadline.
+Lab 2 is ungraded practice with no submission requirement. If your instructor releases a completed reference, find it in the **Canvas course**, not in this public repository. The practice notebook remains available here for future classes.
