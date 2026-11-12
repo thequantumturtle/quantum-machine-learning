@@ -1,0 +1,4 @@
+services:
+  jupyter:
+    pull_policy: always
+    build: !reset null
