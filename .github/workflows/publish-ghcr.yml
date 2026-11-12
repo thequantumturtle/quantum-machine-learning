@@ -1,5 +1,11 @@
 name: Publish core image to GHCR
 on:
+  push:
+    branches: [main]
+    paths:
+      - "docker/**"
+      - "scripts/smoke_test.py"
+      - ".github/workflows/publish-ghcr.yml"
   workflow_dispatch:
     inputs:
       tag:
@@ -27,4 +33,4 @@ jobs:
           file: docker/Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ghcr.io/thequantumturtle/qml-core:${{ inputs.tag }}
+          tags: ghcr.io/thequantumturtle/qml-core:${{ inputs.tag || 'fall-2026-v1' }}
