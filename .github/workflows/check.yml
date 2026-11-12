@@ -19,6 +19,7 @@ jobs:
           python - <<'PY'
           import json, ast
           for p in ['labs/lab-02-quantum-encoding/lab.ipynb',
+                    'labs/lab-02-quantum-encoding/completed-example.ipynb',
                     'homework/hw-01-quantum-kernel-classification/hw.ipynb']:
               nb=json.load(open(p))
               for cell in nb['cells']:
