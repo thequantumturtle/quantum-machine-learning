@@ -1,0 +1,27 @@
+name: Validate course environment
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build core image
+        run: docker build -f docker/Dockerfile -t qml-core:ci .
+      - name: Check PennyLane
+        run: docker run --rm qml-core:ci python /opt/qml/smoke_test.py
+      - name: Validate notebook syntax
+        run: |
+          python - <<'PY'
+          import json, ast
+          p='labs/lab-02-quantum-encoding/lab.ipynb'
+          nb=json.load(open(p))
+          for cell in nb['cells']:
+              if cell['cell_type']=='code':
+                  ast.parse(''.join(cell['source']))
+          print('Notebook syntax passed')
+          PY
