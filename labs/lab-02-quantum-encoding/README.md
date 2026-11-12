@@ -1,5 +1,8 @@
 # Lab 2 — Quantum Encoding and Similarity
 
+**Prepared by Daniel Justice · Carnegie Mellon University · 17-620 Quantum Machine Learning · Fall 2026**  
+© 2026 Daniel Justice for original contributions; third-party materials retain their respective rights. Use and reuse are subject to applicable university policies.
+
 **Duration:** 80 minutes. **Framework:** PennyLane (not Qiskit). **Ungraded practice — no submission required.**
 
 In this lab you will compare classical cosine similarity with quantum squared-overlap kernels from angle and amplitude encodings. You will also estimate an overlap from finite-shot measurements and explain what a fixed quantum kernel does and does not optimize.
