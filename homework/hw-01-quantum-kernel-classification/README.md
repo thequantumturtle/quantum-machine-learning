@@ -11,6 +11,12 @@
 
 This assignment extends Lab 2. Implement **two fixed quantum kernels** in PennyLane, train **classical SVMs** with their kernel matrices, compare classical baselines, and study finite-shot measurement error.
 
+### How to work
+
+Run the notebook top to bottom. After completing the code in each section, run the corresponding **checkpoint cell**. Checkpoints test feature-map shapes, known overlaps, kernel-matrix invariants, and SVM result structure. They provide immediate feedback but do not replace the written explanations or ensure every part of your model is scientifically meaningful.
+
+If the notebook fails, read the first failing check before changing later sections. The private instructor notebook has completed solutions; do not assume a particular kernel must have the highest held-out accuracy.
+
 ### Submit
 
 1. A completed starter notebook that runs from a clean kernel.
