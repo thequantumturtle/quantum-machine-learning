@@ -1,5 +1,8 @@
 # Homework 1 — Quantum Kernel Classification
 
+**Prepared by Daniel Justice · Carnegie Mellon University · 17-620 Quantum Machine Learning · Fall 2026**  
+© 2026 Daniel Justice for original contributions; third-party materials retain their respective rights. Use and reuse are subject to applicable university policies.
+
 **CMU 17-620 | Fall 2026 mini-2 | Instructor preview**
 
 **Estimated effort:** 5–7 hours, including coding, testing, figures, and analysis.  
