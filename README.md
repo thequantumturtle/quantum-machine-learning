@@ -42,7 +42,7 @@ Open **the tokenized URL printed by your own terminal**, not the example URL abo
 
 `labs/lab-02-quantum-encoding/lab.ipynb`
 
-Run the imports cell, then work through Lab 2 **in notebook order**. The repository is mounted into the container, so notebook edits are saved to your local course directory. **Lab 2 is ungraded practice. You do not need to submit this notebook or upload anything to Canvas.** Save your progress if you wish; quizzes and homework have separate graded submissions.
+Run the imports cell, then work through Lab 2 **in notebook order**. After class, you can also open `labs/lab-02-quantum-encoding/completed-example.ipynb` to review the completed code. The repository is mounted into the container, so notebook edits are saved to your local course directory. **Lab 2 is ungraded practice. You do not need to submit this notebook or upload anything to Canvas.** Save your progress if you wish; quizzes and homework have separate graded submissions.
 
 To stop JupyterLab, press **Ctrl+C** in the terminal. You can start it again with `docker compose up` (or `docker compose up --build` after changing dependencies).
 
