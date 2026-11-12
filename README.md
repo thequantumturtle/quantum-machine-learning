@@ -1,5 +1,8 @@
 # Quantum Machine Learning — CMU 17-620
 
+**Prepared by Daniel Justice · Carnegie Mellon University · 17-620 Quantum Machine Learning · Fall 2026**  
+© 2026 Daniel Justice for original contributions; third-party materials retain their respective rights. Use and reuse are subject to applicable university policies.
+
 Student-facing quantum machine learning exercises, maintained by The Quantum Turtle.
 
 **Lab 2 release checklist:** The course environment and student notebook syntax have passed GitHub Actions. Students need **read access to this repository** (or a copy supplied in Canvas). The student repository is public. The published GHCR image has **not yet been verified**, so use the build-from-source instructions below.
