@@ -22,3 +22,9 @@ For troubleshooting and updating your checkout, see the [course README](../../RE
 **Note:** You need access to this GitHub repository (or the instructor's Canvas distribution). The Docker image is built locally; you do not need access to a private container registry or a quantum hardware account.
 
 **Assessment note:** Lab 2 has no Canvas submission. Quizzes and Homework 1 are separate graded activities with their own instructions and deadlines.
+
+## Completed example (available after class)
+
+Students may review [the finished Lab 2 notebook](completed-example.ipynb), which contains completed implementations of the same exercises and runs in the course Docker environment. Use it to compare approaches or revisit a concept at your own pace. The original [practice notebook](lab.ipynb) remains unchanged and is useful for trying the exercises independently.
+
+**Neither notebook is graded or submitted.** Homework 1 is a separate assessment with its own starter and deadline.
