@@ -1,0 +1,7 @@
+pennylane==0.45.1
+numpy==2.2.6
+matplotlib==3.10.3
+scikit-learn==1.6.1
+jupyterlab==4.4.3
+ipykernel==6.29.5
+nbclient==0.10.2
