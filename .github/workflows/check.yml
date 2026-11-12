@@ -18,10 +18,11 @@ jobs:
         run: |
           python - <<'PY'
           import json, ast
-          p='labs/lab-02-quantum-encoding/lab.ipynb'
-          nb=json.load(open(p))
-          for cell in nb['cells']:
-              if cell['cell_type']=='code':
-                  ast.parse(''.join(cell['source']))
-          print('Notebook syntax passed')
+          for p in ['labs/lab-02-quantum-encoding/lab.ipynb',
+                    'homework/hw-01-quantum-kernel-classification/hw.ipynb']:
+              nb=json.load(open(p))
+              for cell in nb['cells']:
+                  if cell['cell_type']=='code':
+                      ast.parse(''.join(cell['source']))
+              print('Notebook syntax passed:', p)
           PY
