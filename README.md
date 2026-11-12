@@ -20,6 +20,10 @@ After a tested versioned image is published, use:
 docker compose -f compose.yaml -f compose.pull.yaml up
 ```
 
+## Homework 1: Quantum Kernel Classification
+
+The larger coding assignment extends Lab 2. Open `homework/hw-01-quantum-kernel-classification/hw.ipynb` in the same JupyterLab environment. See its `README.md` for the task, scoring rubric, and submission expectations. A due date will be posted in the LMS.
+
 ## Source material
 Conceptual inspiration: *A Practical Guide to Quantum Machine Learning and Quantum Optimization*, Chapter 9, and the Fall 2026 course lectures. These notebooks are course exercises, not reproductions of the textbook.
 
