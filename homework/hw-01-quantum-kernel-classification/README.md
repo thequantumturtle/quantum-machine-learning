@@ -1,0 +1,36 @@
+# Homework 1 — Quantum Kernel Classification
+
+**CMU 17-620 | Fall 2026 mini-2 | Instructor preview**
+
+**Estimated effort:** 5–7 hours, including coding, testing, figures, and analysis.  
+**Points:** 100. **Due date:** Assigned separately in the LMS.
+
+## Driving question
+
+**When we change the encoding, how does the resulting similarity change a classifier?**
+
+This assignment extends Lab 2. Implement **two fixed quantum kernels** in PennyLane, train **classical SVMs** with their kernel matrices, compare classical baselines, and study finite-shot measurement error.
+
+### Submit
+
+1. A completed starter notebook that runs from a clean kernel.
+2. Figures and brief written responses embedded in the notebook.
+3. A 300–500-word conclusion in the last Markdown cell.
+
+Use the **same train/test split** for all models. Fit preprocessing on the training set only. Use a common SVM regularization setting. The existing Docker environment includes all necessary packages; no Qiskit or quantum hardware account is needed.
+
+### Grading rubric
+
+| Category | Points |
+|---|---:|
+| A. Explain data preprocessing and avoid leakage | 10 |
+| B. Implement angle and amplitude overlap circuits | 25 |
+| C. Build and validate kernel matrices | 20 |
+| D. Train and evaluate quantum-kernel and classical baselines | 20 |
+| E. Analyze finite-shot estimates | 10 |
+| F. Interpret the results and limitations | 15 |
+| **Total** | **100** |
+
+**Integrity:** Complete your own analysis and follow course rules for citing outside code or AI assistance. Instructor solutions remain private.
+
+**Run:** From the student repository root execute docker compose up --build, then open homework/hw-01-quantum-kernel-classification/hw.ipynb.
