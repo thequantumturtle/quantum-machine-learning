@@ -51,7 +51,7 @@ To stop JupyterLab, press **Ctrl+C** in the terminal. You can start it again wit
 
 ### Troubleshooting
 
-- **Cannot open the GitHub repository / 404:** The repository is private and your GitHub account does not have access. Ask the instructor for access or a Canvas download. A GitHub URL alone does not grant access.
+- **Cannot open the GitHub repository / 404:** Verify the URL is `https://github.com/thequantumturtle/quantum-machine-learning`. This student repository is public; if access still fails, ask the instructor for a Canvas copy.
 - **Cannot connect to the Docker daemon:** Start Docker Desktop and wait for it to report that the engine is running.
 - **Port 8888 already in use:** Stop another Jupyter/Docker session. Alternatively, change the host-side port in `compose.yaml` from `127.0.0.1:8888:8888` to `127.0.0.1:8889:8888`, then restart and use the URL with port 8889.
 - **ModuleNotFoundError:** Make sure you opened JupyterLab from this Docker container and selected its Python 3 kernel, rather than a local Python installation.
@@ -66,6 +66,19 @@ The [student CI workflow](https://github.com/thequantumturtle/quantum-machine-le
 ## Optional prebuilt image (only after instructor confirmation)
 
 The repository has a GitHub Actions workflow named **Publish core image to GHCR**. It can publish the multi-platform image `ghcr.io/thequantumturtle/qml-core:fall-2026-v1`. Until the instructor verifies that the image was published and made accessible to students, **do not use the pull-only Compose override**. The supported first-day command is `docker compose up --build`.
+
+## Lab 3 — Quantum Kernels and Classification
+
+Lab 3 is an **80-minute, ungraded guided practice lab** that connects the squared overlap/fidelity measurements of Lab 2 to kernel classification. Students examine a small one-qubit feature map, build an exact kernel matrix from simulated statevectors, compare a quantum-fidelity SVM to classical linear/RBF SVMs, and explore feature-map choices and finite-shot uncertainty.
+
+**No submission required.** It uses the existing Docker environment and needs no quantum hardware account.
+
+After saving local notebook changes and updating your course checkout with `git pull`, run `docker compose up --build` from the repository root and open:
+
+- [Lab 3 instructions](labs/lab-03-quantum-kernels/README.md)
+- [Lab 3 Jupyter notebook](labs/lab-03-quantum-kernels/lab.ipynb)
+
+If you already have JupyterLab running, refresh its file browser after pulling. This repository contains the student exercise notebook only; completed instructor solutions remain private.
 
 ## Homework 1 — Quantum Kernel Classification
 
