@@ -19,10 +19,26 @@ jobs:
           python - <<'PY'
           import json, ast
           for p in ['labs/lab-02-quantum-encoding/lab.ipynb',
-                    'homework/hw-01-quantum-kernel-classification/hw.ipynb']:
+                    'homework/hw-01-quantum-kernel-classification/hw.ipynb',
+                    'labs/lab-03-quantum-kernels/lab.ipynb']:
               nb=json.load(open(p))
               for cell in nb['cells']:
                   if cell['cell_type']=='code':
                       ast.parse(''.join(cell['source']))
               print('Notebook syntax passed:', p)
+          PY
+      - name: Execute Lab 3 with pinned course dependencies
+        run: |
+          docker run --rm -i -v "$PWD:/workspace:ro" -w /workspace \
+            -e MPLBACKEND=Agg qml-core:ci python - <<'PY'
+          import nbformat
+          from nbclient import NotebookClient
+          path = 'labs/lab-03-quantum-kernels/lab.ipynb'
+          nb = nbformat.read(path, as_version=4)
+          nbformat.validate(nb)
+          NotebookClient(
+              nb, kernel_name='python3', timeout=240, allow_errors=False,
+              resources={'metadata': {'path': '/workspace/labs/lab-03-quantum-kernels'}},
+          ).execute()
+          print('PASS: Lab 3 executed from a clean kernel in course Docker image.')
           PY
